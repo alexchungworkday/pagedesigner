@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="../../favicon.ico">
+		<title>Mozart | Workday UI Design Tools</title> 
+		<meta name="description" content="" />
+		<meta name="keywords" content="interaction, web design, ui" />
+		<meta name="author" content="Alex Chung" />
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+		<link href="//fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css"/>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="styles/style.css" />
+	</head>
+	<body>
+		<div id="content" class="flex-container flex-col">
+			<div id="header-container" class="flex-container flex-col">
+				<header id="header">
+					<div class="row row-main">
+						<p id="logo-box">
+							<img src="http://www.workdaylabs.net/img/workday_header_logo.png" height="55" width="auto" alt="Mozart - Workday Page Designer">
+						</p>
+					
+						<div id='menu'>
+							<ul class="menu">
+								<li>Item</li>
+								<li>Item</li>
+								<li>Item</li>
+								<li>Item</li>
+							</ul>
+						</div>
+					</div>
+				</header>
+			</div>
+		
+			<div id="main" style="background-color: #fff;">
+				<div id="main-content" class="flex-container flex-row">
+					<div id="page-menu">
+						<aside id="mz-menu" class="">
+							<div id="mz-menu-container" class="">
+
+								<nav class="">
+									<div class="scrollable-container">
+										<div class="scrollable-content flex-container flex-col">
+											<div class="block__list block__list_items">
+												<div class="block__list-title">Layout Components</div>
+												<ul class="selection_grid" id="advanced-1">
+													<li class="block__section layout-container"><span class="block__title fa fa-bars"><span>Section</span></span></li>
+													<li class="block__columns layout-container"><span class="block__title fa fa-bars"><span>Columns</span></span></li>
+													<li class="block__grid layout-container"><span class="block__title fa fa-bars"><span>Grid</span></span></li>
+												</ul>
+											</div>
+											
+											<div class="block__list block__list_items">
+												<div class="block__list-title">Core Components</div>
+												<ul class="selection_grid" id="advanced-2">
+													<li class="block__text core-component" data-coretype="block__text"><span class="block__title">Text</span></li>
+													<li class="block__heading core-component" data-coretype="block__heading"><span class="block__title">Heading</span></li>
+													<li class="block__label core-component" data-coretype="block__label"><span class="block__title">Label</span></li>
+													<li class="block__button core-component" data-coretype="block__button"><span class="block__title">Button</span></li>
+													<li class="block__image core-component" data-coretype="block__image"><span class="block__title fa fa-times">Image</span></li>
+													<li class="block__dropdown core-component" data-coretype="block__dropdown"><span class="block__title fa fa-times">Dropdown</span></li>
+													<li class="block__checkbox core-component" data-coretype="block__checkbox"><span class="block__title">Image</span></li>
+													<li class="block__radiobuttons core-component" data-coretype="block__radiobuttons"><span class="block__title fa fa-times">Radio Buttons</span></li>
+													<li class="block__datepicker core-component" data-coretype="block__datepicker"><span class="block__title fa fa-times">Date Picker</span></li>
+													<li class="block__textarea core-component" data-coretype="block__textarea"><span class="block__title">Text Area</span></li>
+													<li class="block__link core-component" data-coretype="block__link"><span class="block__title">Link</span></li>
+													<li class="block__list core-component" data-coretype="block__list"><span class="block__title">List</span></li>
+												</ul>
+											</div>
+											
+											<div class="block__list block__list_items">
+												<div class="block__list-title">Widgets</div>
+												<ul class="selection_grid" id="advanced-3">
+													<li class="block__search widget-component"><span class="block__title fa fa-times">Faceted Search</span></li>
+													<li class="block__questionnaire widget-component"><span class="block__title fa fa-times">Questionnaire</span></li>
+													<li class="block__attachment widget-component"><span class="block__title fa fa-times">Attachment</span></li>
+													<li class="block__nameaddress widget-component"><span class="block__title fa fa-times">Global Name/Address</span></li>
+													<li class="block__linkedin widget-component"><span class="block__title fa fa-times">LinkedIn Import</span></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</nav>
+							</div>
+						</aside>
+					</div>
+
+					<div id="page-body" class="hover">
+						<div id="page-header">Page Header</div>
+						<div id="page-body-drop-area" class="sortable">							
+							<ul class="container_grid" id="page-body-container">
+								
+							</ul>
+						</div>
+					</div>
+
+					<div id="page-property" class="hover">
+						<div id="propertyToggleButton" class="property-toggle"><span class="panel__title fa fa-arrow-circle-o-left"><span>Property Panel</span></span></div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div id="footer">
+				footer
+			</div>
+		</div>
+		<div id="drop-area" class="drop-area">
+			<div>
+				<div class="drop-area__item"><div class="dummy"></div></div>
+				<div class="drop-area__item"><div class="dummy"></div></div>
+				<div class="drop-area__item"><div class="dummy"></div></div>
+				<div class="drop-area__item"><div class="dummy"></div></div>
+			</div>
+		</div>
+		<div class="drop-overlay"></div>
+		<script type="text/javascript" src="scripts/jquery.min.js"></script>
+		<!-- Library for observing JS object changes -->
+		<script type="text/javascript" src="scripts/watch.min.js"></script>
+		<script src="scripts/rivets.bundled.min.js"></script>
+		
+		<script type="text/javascript" src="scripts/handlebars.js"></script>
+		
+		
+		<script src="scripts/Sortable.js"></script>
+		<script src="//rubaxa.github.io/Ply/Ply.min.js"></script>
+		
+		<script type="text/javascript" src="scripts/configurable.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+	</body>
+</html>
